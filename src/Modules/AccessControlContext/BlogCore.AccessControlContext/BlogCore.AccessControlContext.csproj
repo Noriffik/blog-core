@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,6 +25,10 @@
     <ProjectReference Include="..\..\..\Framework\BlogCore.Infrastructure.EfCore\BlogCore.Infrastructure.EfCore.csproj" />
     <ProjectReference Include="..\..\..\Framework\BlogCore.Infrastructure\BlogCore.Infrastructure.csproj" />
     <ProjectReference Include="..\BlogCore.AccessControlContext.Core\BlogCore.AccessControlContext.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="2.0.3" />
   </ItemGroup>
 
 </Project>
